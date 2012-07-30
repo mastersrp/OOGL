@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="src">
+			<UniqueIdentifier>{2F9DB8B9-CA8D-B800-6BD8-B6FB0B8B0891}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="src\GL">
+			<UniqueIdentifier>{B5F9E025-9316-AF34-1619-4BEFC6DC0093}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="src\GL\Util">
+			<UniqueIdentifier>{C1FF6AD6-BD40-8B08-8475-1B0CCC2B4CDB}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="src\GL\Util\zlib">
+			<UniqueIdentifier>{DB2104C7-B5AD-0905-1BB3-CEE23E131BB7}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\src\GL\Util\zlib\trees.c">
+			<Filter>src\GL\Util\zlib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\zlib\inffast.c">
+			<Filter>src\GL\Util\zlib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\zlib\zutil.c">
+			<Filter>src\GL\Util\zlib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\zlib\adler32.c">
+			<Filter>src\GL\Util\zlib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\zlib\deflate.c">
+			<Filter>src\GL\Util\zlib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\zlib\inftrees.c">
+			<Filter>src\GL\Util\zlib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\zlib\uncompr.c">
+			<Filter>src\GL\Util\zlib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\zlib\compress.c">
+			<Filter>src\GL\Util\zlib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\zlib\crc32.c">
+			<Filter>src\GL\Util\zlib</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\zlib\inflate.c">
+			<Filter>src\GL\Util\zlib</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

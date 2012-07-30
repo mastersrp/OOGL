@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="src">
+			<UniqueIdentifier>{E501FD15-EBD7-2DCE-CC11-32D6544E9E55}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="src\GL">
+			<UniqueIdentifier>{7B988B51-41EF-3200-EA2E-198B4C275E58}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="src\GL\Util">
+			<UniqueIdentifier>{386CEBE5-0EBE-C7A4-D52D-1383979E33BB}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="src\GL\Util\libjpeg">
+			<UniqueIdentifier>{F7A04455-B5B1-1DF7-3078-2A6B618CC05B}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jddctmgr.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jctrans.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jfdctflt.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jmemmgr.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jdatasrc.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jdcolor.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jdsample.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jidctint.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jccolor.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jdinput.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jcapistd.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jcomapi.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jdatadst.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jcparam.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jfdctfst.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jcapimin.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jdpostct.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jdtrans.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jchuff.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jmemnobs.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jcsample.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jidctflt.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jdapimin.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jdmerge.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jcprepct.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jaricom.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jdmarker.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jcarith.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jcmarker.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jquant2.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jidctfst.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jquant1.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jutils.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jdmainct.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jcinit.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jcdctmgr.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jdarith.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jdcoefct.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jdhuff.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jfdctint.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jdmaster.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jcmaster.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jcmainct.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jccoefct.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jerror.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libjpeg\jdapistd.c">
+			<Filter>src\GL\Util\libjpeg</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

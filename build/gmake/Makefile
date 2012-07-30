@@ -6,17 +6,32 @@ ifndef config
 endif
 export config
 
-PROJECTS := OOGL
+PROJECTS := png jpeg zlib OOGL
 
 .PHONY: all clean help $(PROJECTS)
 
 all: $(PROJECTS)
 
-OOGL: 
+png: 
+	@echo "==== Building png ($(config)) ===="
+	@${MAKE} --no-print-directory -C . -f png.make
+
+jpeg: 
+	@echo "==== Building jpeg ($(config)) ===="
+	@${MAKE} --no-print-directory -C . -f jpeg.make
+
+zlib: 
+	@echo "==== Building zlib ($(config)) ===="
+	@${MAKE} --no-print-directory -C . -f zlib.make
+
+OOGL: zlib
 	@echo "==== Building OOGL ($(config)) ===="
 	@${MAKE} --no-print-directory -C . -f OOGL.make
 
 clean:
+	@${MAKE} --no-print-directory -C . -f png.make clean
+	@${MAKE} --no-print-directory -C . -f jpeg.make clean
+	@${MAKE} --no-print-directory -C . -f zlib.make clean
 	@${MAKE} --no-print-directory -C . -f OOGL.make clean
 
 help:
@@ -29,6 +44,9 @@ help:
 	@echo "TARGETS:"
 	@echo "   all (default)"
 	@echo "   clean"
+	@echo "   png"
+	@echo "   jpeg"
+	@echo "   zlib"
 	@echo "   OOGL"
 	@echo ""
 	@echo "For more information, see http://industriousone.com/premake/quick-start"

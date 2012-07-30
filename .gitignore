@@ -17,6 +17,8 @@
 *.o
 *.a
 
-# Linux debug files
+# Misc files
 
-*.d
+*.d			# debug files
+*.swp		# vim swap files
+*.bak		# gedit backup files

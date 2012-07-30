@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="src">
+			<UniqueIdentifier>{2511D3C8-95D0-0309-58A8-DA2B43B1B158}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="src\GL">
+			<UniqueIdentifier>{7E2FE88D-ADA6-70BC-0BFD-C6E9CDB64ED0}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="src\GL\Util">
+			<UniqueIdentifier>{C4EB6CA0-AA17-EA4C-3DB8-6E88EFE5FACB}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="src\GL\Util\libpng">
+			<UniqueIdentifier>{D10924C4-FFEB-DD1F-1FE5-52FE9BB285CA}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\src\GL\Util\libpng\pngwutil.c">
+			<Filter>src\GL\Util\libpng</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libpng\pngtrans.c">
+			<Filter>src\GL\Util\libpng</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libpng\png.c">
+			<Filter>src\GL\Util\libpng</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libpng\pngrutil.c">
+			<Filter>src\GL\Util\libpng</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libpng\pngrtran.c">
+			<Filter>src\GL\Util\libpng</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libpng\pnggccrd.c">
+			<Filter>src\GL\Util\libpng</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libpng\pngget.c">
+			<Filter>src\GL\Util\libpng</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libpng\pngpread.c">
+			<Filter>src\GL\Util\libpng</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libpng\pngrio.c">
+			<Filter>src\GL\Util\libpng</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libpng\pngvcrd.c">
+			<Filter>src\GL\Util\libpng</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libpng\pngwtran.c">
+			<Filter>src\GL\Util\libpng</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libpng\pngset.c">
+			<Filter>src\GL\Util\libpng</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libpng\pngread.c">
+			<Filter>src\GL\Util\libpng</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libpng\pngerror.c">
+			<Filter>src\GL\Util\libpng</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libpng\pngwrite.c">
+			<Filter>src\GL\Util\libpng</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libpng\pngwio.c">
+			<Filter>src\GL\Util\libpng</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\GL\Util\libpng\pngmem.c">
+			<Filter>src\GL\Util\libpng</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

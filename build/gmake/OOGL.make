@@ -20,18 +20,18 @@ ifndef AR
 endif
 
 ifeq ($(config),debug)
-  OBJDIR     = obj/Debug
+  OBJDIR     = obj/Debug/OOGL
   TARGETDIR  = ../../bin
-  TARGET     = $(TARGETDIR)/libOOGL.a
-  DEFINES   += -DDEBUG
-  INCLUDES  += -I../../include
+  TARGET     = $(TARGETDIR)/libOOGL-d.a
+  DEFINES   += -DDEBUG -DExtraWarnings -DFatalWarnings
+  INCLUDES  += -I../../include -I../../src/GL/Util/libjpeg -I../../src/GL/Util/libpng -I../../src/GL/Util/zlib -I../../src
   CPPFLAGS  += -MMD -MP $(DEFINES) $(INCLUDES)
-  CFLAGS    += $(CPPFLAGS) $(ARCH) -g -std=c++0x
+  CFLAGS    += $(CPPFLAGS) $(ARCH) -g -ffast-math -msse2 -std=c++0x
   CXXFLAGS  += $(CFLAGS) 
-  LDFLAGS   += 
-  LIBS      += 
+  LDFLAGS   += -L../../bin
+  LIBS      += -lzlib-d -llibjpeg -llibpng
   RESFLAGS  += $(DEFINES) $(INCLUDES) 
-  LDDEPS    += 
+  LDDEPS    += ../../bin/libzlib-d.a
   LINKCMD    = $(AR) -rcs $(TARGET) $(OBJECTS)
   define PREBUILDCMDS
   endef
@@ -42,18 +42,18 @@ ifeq ($(config),debug)
 endif
 
 ifeq ($(config),release)
-  OBJDIR     = obj/Release
+  OBJDIR     = obj/Release/OOGL
   TARGETDIR  = ../../bin
   TARGET     = $(TARGETDIR)/libOOGL.a
-  DEFINES   += -DNDEBUG
-  INCLUDES  += -I../../include
+  DEFINES   += -DNDEBUG -DExtraWarnings -DFatalWarnings
+  INCLUDES  += -I../../include -I../../src/GL/Util/libjpeg -I../../src/GL/Util/libpng -I../../src/GL/Util/zlib -I../../src
   CPPFLAGS  += -MMD -MP $(DEFINES) $(INCLUDES)
-  CFLAGS    += $(CPPFLAGS) $(ARCH) -O2 -std=c++0x
+  CFLAGS    += $(CPPFLAGS) $(ARCH) -O3 -ffast-math -msse2 -std=c++0x
   CXXFLAGS  += $(CFLAGS) 
-  LDFLAGS   += -s
-  LIBS      += 
+  LDFLAGS   += -s -L../../bin
+  LIBS      += -lzlib -llibjpeg -llibpng
   RESFLAGS  += $(DEFINES) $(INCLUDES) 
-  LDDEPS    += 
+  LDDEPS    += ../../bin/libzlib.a
   LINKCMD    = $(AR) -rcs $(TARGET) $(OBJECTS)
   define PREBUILDCMDS
   endef

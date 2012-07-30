@@ -3,12 +3,13 @@ solution "OOGL"
 
 	configuration "Debug"
 		defines { "DEBUG" }
-		flags { "Symbols" }
-		buildoptions { "-std=c++0x" } -- C++0x support REQUIRED
+		flags { "Symbols", "FloatFast", "EnableSSE2" }
+		--buildoptions { "-std=c++0x" } -- C++0x support REQUIRED
+		targetsuffix( "-d" )
 	configuration "Release"
 		defines { "NDEBUG" }
-		flags { "Optimize" }
-		buildoptions { "-std=c++0x" } -- C++0x support REQUIRED
+		flags { "OptimizeSpeed", "FloatFast", "EnableSSE2" }
+		--buildoptions { "-std=c++0x" } -- C++0x support REQUIRED
 
 	if( _ACTION == nil ) then
 		location( "build/" )
@@ -16,9 +17,9 @@ solution "OOGL"
 		location( "build/" .. _ACTION )
 	end
 
-	libjpeg = { "src/GL/Util/libjpeg/*.c" }
-	libpng = { "src/GL/Util/libpng/*.c" }
-	zlib = { "src/GL/Util/zlib/*.c" }
+	libjpeg = os.matchfiles( "src/GL/Util/libjpeg/*.c" )
+	libpng = os.matchfiles( "src/GL/Util/libpng/*.c" )
+	zlib = os.matchfiles( "src/GL/Util/zlib/*.c" )
 
 	newoption {
 		trigger			= "without-meshloader",
@@ -48,6 +49,27 @@ solution "OOGL"
 	configuration "without-imageloader"
 		defines { "OOGL_NO_IMAGELOADER" }
 
+	project "png"
+		kind "StaticLib"
+		language "C"
+		includedirs { "include", "src" }
+		targetdir( "bin/" )
+		files { "src/GL/Util/libpng/*.c" }
+	
+	project "jpeg"
+		kind "StaticLib"
+		language "C"
+		includedirs { "include", "src" }
+		targetdir( "bin/" )
+		files { "src/GL/Util/libjpeg/*.c" }
+	
+	project "zlib"
+		kind "StaticLib"
+		language "C"
+		includedirs { "include", "src" }
+		targetdir( "bin/" )
+		files { "src/GL/Util/zlib/*.c" }
+
 	project "OOGL"
 		if( _OPTIONS['build'] == "shared" ) then
 			kind "SharedLib"
@@ -55,7 +77,9 @@ solution "OOGL"
 			kind "StaticLib"
 		end
 		language "C++"
-		includedirs { "include" }
+		includedirs { "include", "src/GL/Util/libjpeg","src/GL/Util/libpng","src/GL/Util/zlib/", "src" }
 		targetdir ( "bin/" )
-		file = os.matchfiles("src/**.cpp")
-		files { file }
+		buildoptions { "-std=c++0x" }
+		files { "src/**.cpp" }
+		defines { "ExtraWarnings", "FatalWarnings" }
+		links { "zlib", "libjpeg", "libpng" }

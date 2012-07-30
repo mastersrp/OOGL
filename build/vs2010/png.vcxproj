@@ -11,8 +11,8 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{C28AC4E9-0500-7981-435D-784C5F36C0A6}</ProjectGuid>
-		<RootNamespace>OOGL</RootNamespace>
+		<ProjectGuid>{BD0EE957-E04E-4461-317F-92AD0E36C133}</ProjectGuid>
+		<RootNamespace>png</RootNamespace>
 		<Keyword>Win32Proj</Keyword>
 	</PropertyGroup>
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -40,18 +40,17 @@
 	<PropertyGroup>
 		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
 		<OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\bin\</OutDir>
-		<IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obj\Debug\OOGL\</IntDir>
-		<TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OOGL-d</TargetName>
+		<IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obj\Debug\png\</IntDir>
+		<TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">png-d</TargetName>
 		<OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\bin\</OutDir>
-		<IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obj\Release\OOGL\</IntDir>
-		<TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OOGL</TargetName>
+		<IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obj\Release\png\</IntDir>
+		<TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">png</TargetName>
 	</PropertyGroup>
 	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
 		<ClCompile>
-			<AdditionalOptions>-std=c++0x %(AdditionalOptions)</AdditionalOptions>
 			<Optimization>Disabled</Optimization>
-			<AdditionalIncludeDirectories>..\..\include;..\..\src\GL\Util\libjpeg;..\..\src\GL\Util\libpng;..\..\src\GL\Util\zlib;..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-			<PreprocessorDefinitions>DEBUG;ExtraWarnings;FatalWarnings;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>..\..\include;..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
 			<MinimalRebuild>true</MinimalRebuild>
 			<BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
 			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -61,26 +60,26 @@
 			<EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
 			<FloatingPointModel>Fast</FloatingPointModel>
 			<DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+			<CompileAs>CompileAsC</CompileAs>
 		</ClCompile>
 		<ResourceCompile>
-			<PreprocessorDefinitions>DEBUG;ExtraWarnings;FatalWarnings;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-			<AdditionalIncludeDirectories>..\..\include;..\..\src\GL\Util\libjpeg;..\..\src\GL\Util\libpng;..\..\src\GL\Util\zlib;..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>..\..\include;..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
 		</ResourceCompile>
 	<Lib>
-		<OutputFile>$(OutDir)OOGL-d.lib</OutputFile>
+		<OutputFile>$(OutDir)png-d.lib</OutputFile>
 	</Lib>
 		<Link>
 			<SubSystem>Windows</SubSystem>
 			<GenerateDebugInformation>true</GenerateDebugInformation>
-			<ProgramDataBaseFileName>$(OutDir)OOGL-d.pdb</ProgramDataBaseFileName>
+			<ProgramDataBaseFileName>$(OutDir)png-d.pdb</ProgramDataBaseFileName>
 		</Link>
 	</ItemDefinitionGroup>
 	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
 		<ClCompile>
-			<AdditionalOptions>-std=c++0x %(AdditionalOptions)</AdditionalOptions>
 			<Optimization>MaxSpeed</Optimization>
-			<AdditionalIncludeDirectories>..\..\include;..\..\src\GL\Util\libjpeg;..\..\src\GL\Util\libpng;..\..\src\GL\Util\zlib;..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-			<PreprocessorDefinitions>NDEBUG;ExtraWarnings;FatalWarnings;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>..\..\include;..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
 			<MinimalRebuild>false</MinimalRebuild>
 			<StringPooling>true</StringPooling>
 			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -90,13 +89,14 @@
 			<EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
 			<FloatingPointModel>Fast</FloatingPointModel>
 			<DebugInformationFormat></DebugInformationFormat>
+			<CompileAs>CompileAsC</CompileAs>
 		</ClCompile>
 		<ResourceCompile>
-			<PreprocessorDefinitions>NDEBUG;ExtraWarnings;FatalWarnings;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-			<AdditionalIncludeDirectories>..\..\include;..\..\src\GL\Util\libjpeg;..\..\src\GL\Util\libpng;..\..\src\GL\Util\zlib;..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>..\..\include;..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
 		</ResourceCompile>
 	<Lib>
-		<OutputFile>$(OutDir)OOGL.lib</OutputFile>
+		<OutputFile>$(OutDir)png.lib</OutputFile>
 	</Lib>
 		<Link>
 			<SubSystem>Windows</SubSystem>
@@ -106,47 +106,39 @@
 		</Link>
 	</ItemDefinitionGroup>
 	<ItemGroup>
-		<ClCompile Include="..\..\src\GL\Math\Vec3.cpp">
+		<ClCompile Include="..\..\src\GL\Util\libpng\pngwutil.c">
 		</ClCompile>
-		<ClCompile Include="..\..\src\GL\Math\Mat4.cpp">
+		<ClCompile Include="..\..\src\GL\Util\libpng\pngtrans.c">
 		</ClCompile>
-		<ClCompile Include="..\..\src\GL\Math\Mat3.cpp">
+		<ClCompile Include="..\..\src\GL\Util\libpng\png.c">
 		</ClCompile>
-		<ClCompile Include="..\..\src\GL\Math\Vec2.cpp">
+		<ClCompile Include="..\..\src\GL\Util\libpng\pngrutil.c">
 		</ClCompile>
-		<ClCompile Include="..\..\src\GL\Math\Vec4.cpp">
+		<ClCompile Include="..\..\src\GL\Util\libpng\pngrtran.c">
 		</ClCompile>
-		<ClCompile Include="..\..\src\GL\Util\Mesh.cpp">
+		<ClCompile Include="..\..\src\GL\Util\libpng\pnggccrd.c">
 		</ClCompile>
-		<ClCompile Include="..\..\src\GL\Util\Image.cpp">
+		<ClCompile Include="..\..\src\GL\Util\libpng\pngget.c">
 		</ClCompile>
-		<ClCompile Include="..\..\src\GL\GL\Framebuffer.cpp">
+		<ClCompile Include="..\..\src\GL\Util\libpng\pngpread.c">
 		</ClCompile>
-		<ClCompile Include="..\..\src\GL\GL\Renderbuffer.cpp">
+		<ClCompile Include="..\..\src\GL\Util\libpng\pngrio.c">
 		</ClCompile>
-		<ClCompile Include="..\..\src\GL\GL\Context_X11.cpp">
+		<ClCompile Include="..\..\src\GL\Util\libpng\pngvcrd.c">
 		</ClCompile>
-		<ClCompile Include="..\..\src\GL\GL\Extensions.cpp">
+		<ClCompile Include="..\..\src\GL\Util\libpng\pngwtran.c">
 		</ClCompile>
-		<ClCompile Include="..\..\src\GL\GL\VertexArray.cpp">
+		<ClCompile Include="..\..\src\GL\Util\libpng\pngset.c">
 		</ClCompile>
-		<ClCompile Include="..\..\src\GL\GL\Texture.cpp">
+		<ClCompile Include="..\..\src\GL\Util\libpng\pngread.c">
 		</ClCompile>
-		<ClCompile Include="..\..\src\GL\GL\Program.cpp">
+		<ClCompile Include="..\..\src\GL\Util\libpng\pngerror.c">
 		</ClCompile>
-		<ClCompile Include="..\..\src\GL\GL\VertexBuffer.cpp">
+		<ClCompile Include="..\..\src\GL\Util\libpng\pngwrite.c">
 		</ClCompile>
-		<ClCompile Include="..\..\src\GL\GL\Shader.cpp">
+		<ClCompile Include="..\..\src\GL\Util\libpng\pngwio.c">
 		</ClCompile>
-		<ClCompile Include="..\..\src\GL\GL\Context_Win32.cpp">
-		</ClCompile>
-		<ClCompile Include="..\..\src\GL\GL\Context.cpp">
-		</ClCompile>
-		<ClCompile Include="..\..\src\GL\Window\Window_Win32.cpp">
-		</ClCompile>
-		<ClCompile Include="..\..\src\GL\Window\Window_X11.cpp">
-		</ClCompile>
-		<ClCompile Include="..\..\src\GL\Window\Window.cpp">
+		<ClCompile Include="..\..\src\GL\Util\libpng\pngmem.c">
 		</ClCompile>
 	</ItemGroup>
 	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
