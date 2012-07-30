@@ -2,16 +2,16 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<ItemGroup>
 		<Filter Include="src">
-			<UniqueIdentifier>{2511D3C8-95D0-0309-58A8-DA2B43B1B158}</UniqueIdentifier>
+			<UniqueIdentifier>{A5007ADA-24A5-EF70-D961-237EC042E868}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="src\GL">
-			<UniqueIdentifier>{7E2FE88D-ADA6-70BC-0BFD-C6E9CDB64ED0}</UniqueIdentifier>
+			<UniqueIdentifier>{467A2480-681D-5376-8295-3DEE7C99532E}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="src\GL\Util">
-			<UniqueIdentifier>{C4EB6CA0-AA17-EA4C-3DB8-6E88EFE5FACB}</UniqueIdentifier>
+			<UniqueIdentifier>{8B45386D-F8E6-C8F2-26D3-A47A02D157C4}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="src\GL\Util\libpng">
-			<UniqueIdentifier>{D10924C4-FFEB-DD1F-1FE5-52FE9BB285CA}</UniqueIdentifier>
+			<UniqueIdentifier>{3308D8CF-3A86-A098-D9B6-DC8A85E65565}</UniqueIdentifier>
 		</Filter>
 	</ItemGroup>
 	<ItemGroup>

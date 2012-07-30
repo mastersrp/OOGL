@@ -4,12 +4,10 @@ solution "OOGL"
 	configuration "Debug"
 		defines { "DEBUG" }
 		flags { "Symbols", "FloatFast", "EnableSSE2" }
-		--buildoptions { "-std=c++0x" } -- C++0x support REQUIRED
 		targetsuffix( "-d" )
 	configuration "Release"
 		defines { "NDEBUG" }
 		flags { "OptimizeSpeed", "FloatFast", "EnableSSE2" }
-		--buildoptions { "-std=c++0x" } -- C++0x support REQUIRED
 
 	if( _ACTION == nil ) then
 		location( "build/" )
@@ -79,7 +77,7 @@ solution "OOGL"
 		language "C++"
 		includedirs { "include", "src/GL/Util/libjpeg","src/GL/Util/libpng","src/GL/Util/zlib/", "src" }
 		targetdir ( "bin/" )
-		buildoptions { "-std=c++0x" }
+		buildoptions { "-std=c++0x" } -- Enable C++0x for OOGL, but not for the C libraries
 		files { "src/**.cpp" }
 		defines { "ExtraWarnings", "FatalWarnings" }
-		links { "zlib", "libjpeg", "libpng" }
+		links { "zlib", "jpeg", "png" }

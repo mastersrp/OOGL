@@ -2,22 +2,22 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<ItemGroup>
 		<Filter Include="src">
-			<UniqueIdentifier>{FE50BC38-6D14-541B-4070-3FB60707A5BC}</UniqueIdentifier>
+			<UniqueIdentifier>{BC61B463-AC22-F3C4-1685-45D9BC3D1BDC}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="src\GL">
-			<UniqueIdentifier>{CD0D71C1-F776-39B1-8E03-A92CCBC68C0F}</UniqueIdentifier>
+			<UniqueIdentifier>{DA9267AB-1B3A-CF5A-0B25-913CE5D48227}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="src\GL\Math">
-			<UniqueIdentifier>{470E2829-97EA-9014-EFE8-F55853960A6F}</UniqueIdentifier>
+			<UniqueIdentifier>{51E9E870-AE03-F8ED-2675-B7224FA917CE}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="src\GL\Util">
-			<UniqueIdentifier>{5B6C3894-F9DE-E2BE-6359-794EB21B6772}</UniqueIdentifier>
+			<UniqueIdentifier>{8DF567F8-2E06-FEF6-2617-B325918AE927}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="src\GL\GL">
-			<UniqueIdentifier>{FCA261CD-D766-8649-82D4-9B2C163BCF3C}</UniqueIdentifier>
+			<UniqueIdentifier>{78D300FB-1C0B-EA4C-F61B-72DFBBA12736}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="src\GL\Window">
-			<UniqueIdentifier>{7CA2A36E-4A1C-0BC6-7396-64B2F7683DA7}</UniqueIdentifier>
+			<UniqueIdentifier>{DFB06F43-8106-B5E0-5651-0589C55D0C67}</UniqueIdentifier>
 		</Filter>
 	</ItemGroup>
 	<ItemGroup>

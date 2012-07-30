@@ -11,7 +11,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{C28AC4E9-0500-7981-435D-784C5F36C0A6}</ProjectGuid>
+		<ProjectGuid>{165142A6-5408-2DAE-2C51-FA5BA75C55DC}</ProjectGuid>
 		<RootNamespace>OOGL</RootNamespace>
 		<Keyword>Win32Proj</Keyword>
 	</PropertyGroup>

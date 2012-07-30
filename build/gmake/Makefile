@@ -24,7 +24,7 @@ zlib:
 	@echo "==== Building zlib ($(config)) ===="
 	@${MAKE} --no-print-directory -C . -f zlib.make
 
-OOGL: zlib
+OOGL: zlib jpeg png
 	@echo "==== Building OOGL ($(config)) ===="
 	@${MAKE} --no-print-directory -C . -f OOGL.make
 

@@ -29,9 +29,9 @@ ifeq ($(config),debug)
   CFLAGS    += $(CPPFLAGS) $(ARCH) -g -ffast-math -msse2 -std=c++0x
   CXXFLAGS  += $(CFLAGS) 
   LDFLAGS   += -L../../bin
-  LIBS      += -lzlib-d -llibjpeg -llibpng
+  LIBS      += -lzlib-d -ljpeg-d -lpng-d
   RESFLAGS  += $(DEFINES) $(INCLUDES) 
-  LDDEPS    += ../../bin/libzlib-d.a
+  LDDEPS    += ../../bin/libzlib-d.a ../../bin/libjpeg-d.a ../../bin/libpng-d.a
   LINKCMD    = $(AR) -rcs $(TARGET) $(OBJECTS)
   define PREBUILDCMDS
   endef
@@ -51,9 +51,9 @@ ifeq ($(config),release)
   CFLAGS    += $(CPPFLAGS) $(ARCH) -O3 -ffast-math -msse2 -std=c++0x
   CXXFLAGS  += $(CFLAGS) 
   LDFLAGS   += -s -L../../bin
-  LIBS      += -lzlib -llibjpeg -llibpng
+  LIBS      += -lzlib -ljpeg -lpng
   RESFLAGS  += $(DEFINES) $(INCLUDES) 
-  LDDEPS    += ../../bin/libzlib.a
+  LDDEPS    += ../../bin/libzlib.a ../../bin/libjpeg.a ../../bin/libpng.a
   LINKCMD    = $(AR) -rcs $(TARGET) $(OBJECTS)
   define PREBUILDCMDS
   endef
